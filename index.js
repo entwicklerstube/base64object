@@ -4,7 +4,7 @@ export const encode = value => {
   } else if (typeof window === 'undefined' && (process && process.version !== 'undefined')) {
     return new Buffer(JSON.stringify(value)).toString('base64')
   } else {
-    return window.btoa(value)
+    return window.btoa(JSON.stringify(value))
   }
 }
 
