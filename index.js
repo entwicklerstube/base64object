@@ -14,7 +14,7 @@ export const decode = value => {
   } else if (typeof window === 'undefined' && (process && process.version !== 'undefined')) {
     return JSON.parse(Buffer.from(value, 'base64').toString())
   } else {
-    return JSON.parse(window.atob(JSON.parse(value)))
+    return JSON.parse(window.atob(value))
   }
 }
 
