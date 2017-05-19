@@ -1,7 +1,7 @@
 {
   "name": "base64object",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "description": "Encode and decode a object without stringify / parsing the data",
   "repository": "git@github.com:entwicklerstube/base64object.git",
   "author": "michaelzoidl <github@michaelzoidl.com>",
